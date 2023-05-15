@@ -1,1 +1,1 @@
-this folder will contain my solutions for the tasks that is related to -introduction to js by coding bootcamp europe-
+This folder contains my solution to coding task 05
