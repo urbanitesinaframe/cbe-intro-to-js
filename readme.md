@@ -1,1 +1,1 @@
-This folder contains my solution to coding task 05
+this folder will contain my solutions to the coding task from coding-foundation
