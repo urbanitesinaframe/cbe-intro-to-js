@@ -24,3 +24,45 @@ console.log(oddNumbers(10, 33));
 
 console.log(oddNumbers(9, 12));
 // result should be: 9,11
+
+console.log("Task 02: charCount function");
+
+/*The function has a first parameter for a word which is a string.
+ The function has a second parameter which contains the character to search for which is a string.
+ Check if the second parameter consists of only one character, if not, quit the function.
+ The function returns the number of times the character from the second parameter is present in the word.
+ The function should be case insensitive.*/
+
+// TODO: Implement the charCount function
+
+function charCount(parameter1, parameter2) {
+  let result = 0;
+  if (
+    parameter2.length !== 1 ||
+    isNaN(false) ||
+    typeof parameter2 !== "string"
+  ) {
+    return "Parameter2 is not a (single) letter";
+  } else {
+    for (i = 0; i < parameter1.length; i++) {
+      if (parameter1[i] === parameter2) {
+        result += 1;
+      } else {
+        result + "";
+      }
+    }
+    return result;
+  }
+}
+console.log(charCount("hello", "l"));
+// result should be: 2
+
+console.log(charCount("mama", "m"));
+// result should be: 2
+
+console.log(charCount("Resümee", "e"));
+// result should be: 3
+
+console.log(charCount("Resümee", 2));
+
+console.log(charCount("Schneeseefeetee", "e"));
