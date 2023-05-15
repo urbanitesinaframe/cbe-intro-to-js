@@ -45,7 +45,7 @@ function charCount(parameter1, parameter2) {
     return "Parameter2 is not a (single) letter";
   } else {
     for (i = 0; i < parameter1.length; i++) {
-      if (parameter1[i] === parameter2) {
+      if (parameter1[i].toLowerCase() === parameter2.toLowerCase()) {
         result += 1;
       } else {
         result + "";
@@ -64,5 +64,7 @@ console.log(charCount("Resümee", "e"));
 // result should be: 3
 
 console.log(charCount("Resümee", 2));
+//check if 1st if is being triggered. Expected result "Parameter2 is not a (single) letter"
 
-console.log(charCount("Schneeseefeetee", "e"));
+console.log(charCount("Elefant", "e"));
+//check if all letters are changed to lower case. Expected result 2
